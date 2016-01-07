@@ -28,6 +28,5 @@
 *.app
 
 # project files
-*.sdf
 *.vcxproj
 *.vcxproj.filters
