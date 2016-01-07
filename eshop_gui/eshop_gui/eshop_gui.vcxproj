@@ -20,7 +20,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <CLRSupport>Pure</CLRSupport>
+    <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -40,7 +40,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LinkIncremental>true</LinkIncremental>
+    <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -51,6 +51,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsManaged>true</CompileAsManaged>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -82,10 +83,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="app.ico" />
+    <None Include="packages.config" />
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\classes\Administrator.cpp" />
+    <ClCompile Include="..\..\..\classes\Availability.cpp" />
+    <ClCompile Include="..\..\..\classes\Company.cpp" />
+    <ClCompile Include="..\..\..\classes\Customer.cpp" />
+    <ClCompile Include="..\..\..\classes\Order.cpp" />
+    <ClCompile Include="..\..\..\classes\PC.cpp" />
+    <ClCompile Include="..\..\..\classes\Person.cpp" />
+    <ClCompile Include="..\..\..\classes\ProductBase.cpp" />
+    <ClCompile Include="..\..\..\classes\ProductDAO.cpp" />
+    <ClCompile Include="..\..\..\classes\Smartphone.cpp" />
+    <ClCompile Include="..\..\..\classes\TV.cpp" />
+    <ClCompile Include="..\..\..\classes\UserBase.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="eshop_gui.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -94,6 +109,18 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\classes\Administrator.h" />
+    <ClInclude Include="..\..\..\classes\Availability.h" />
+    <ClInclude Include="..\..\..\classes\Company.h" />
+    <ClInclude Include="..\..\..\classes\Customer.h" />
+    <ClInclude Include="..\..\..\classes\Order.h" />
+    <ClInclude Include="..\..\..\classes\PC.h" />
+    <ClInclude Include="..\..\..\classes\Person.h" />
+    <ClInclude Include="..\..\..\classes\ProductBase.h" />
+    <ClInclude Include="..\..\..\classes\ProductDAO.h" />
+    <ClInclude Include="..\..\..\classes\Smartphone.h" />
+    <ClInclude Include="..\..\..\classes\TV.h" />
+    <ClInclude Include="..\..\..\classes\UserBase.h" />
     <ClInclude Include="Login.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -111,5 +138,12 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\sqlite3.3.8.8.3\build\native\sqlite3.targets" Condition="Exists('..\packages\sqlite3.3.8.8.3\build\native\sqlite3.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\sqlite3.3.8.8.3\build\native\sqlite3.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\sqlite3.3.8.8.3\build\native\sqlite3.targets'))" />
+  </Target>
 </Project>

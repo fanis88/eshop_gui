@@ -116,6 +116,7 @@ namespace eshop_gui {
 			this->Controls->Add(this->button1);
 			this->Name = L"Form1";
 			this->Text = L"Form1";
+			this->Load += gcnew System::EventHandler(this, &Form1::Form1_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -125,6 +126,8 @@ namespace eshop_gui {
 			 }
 	private: System::Void label2_Click(System::Object^  sender, System::EventArgs^  e) {
 			 }
-	};
+	private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e) {
+			 }
+};
 }
 

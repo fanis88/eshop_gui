@@ -1,11 +1,13 @@
 // eshop_gui.cpp : main project file.
 
 #include "stdafx.h"
-#include "Form1.h"
+#include "Login.h"
+//#include "Form1.h"
 
 using namespace eshop_gui;
 
-[STAThreadAttribute]
+//[STAThreadAttribute]
+[System::STAThread]
 int main(array<System::String ^> ^args)
 {
 	// Enabling Windows XP visual effects before any controls are created

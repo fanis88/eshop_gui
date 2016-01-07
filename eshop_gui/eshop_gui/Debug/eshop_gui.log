@@ -1,0 +1,64 @@
+﻿Build started 7/1/2016 9:11:24 μμ.
+     1>Project "D:\Z\IoannaM\Project\eshop_gui\eshop_gui\eshop_gui\eshop_gui.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\eshop_gui.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "Debug\eshop_gui.unsuccessfulbuild".
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\Z\IoannaM\Project\eshop_gui\eshop_gui\packages\sqlite3.3.8.8.3\build\native\../..//build/native/include/ /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\eshop_gui.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt stdafx.cpp /clr:nostdlib 
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\Z\IoannaM\Project\eshop_gui\eshop_gui\packages\sqlite3.3.8.8.3\build\native\../..//build/native/include/ /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\eshop_gui.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt ..\..\..\classes\Administrator.cpp ..\..\..\classes\Availability.cpp ..\..\..\classes\Company.cpp ..\..\..\classes\Customer.cpp ..\..\..\classes\Order.cpp ..\..\..\classes\PC.cpp ..\..\..\classes\Person.cpp ..\..\..\classes\ProductBase.cpp ..\..\..\classes\ProductDAO.cpp ..\..\..\classes\Smartphone.cpp ..\..\..\classes\TV.cpp ..\..\..\classes\UserBase.cpp AssemblyInfo.cpp eshop_gui.cpp /clr:nostdlib 
+         Administrator.cpp
+         Availability.cpp
+         Company.cpp
+         Customer.cpp
+         Order.cpp
+         PC.cpp
+         Person.cpp
+         ProductBase.cpp
+         ProductDAO.cpp
+     1>..\..\..\classes\ProductDAO.cpp(354): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\..\..\classes\ProductDAO.cpp(373): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\..\..\classes\ProductDAO.cpp(447): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\..\..\classes\ProductDAO.cpp(466): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\..\..\classes\ProductDAO.cpp(559): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\..\..\classes\ProductDAO.cpp(606): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+         Smartphone.cpp
+         TV.cpp
+         UserBase.cpp
+         AssemblyInfo.cpp
+         eshop_gui.cpp
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\Z\IoannaM\Project\eshop_gui\eshop_gui\packages\sqlite3.3.8.8.3\build\native\../..//build/native/include/ /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /analyze- /errorReport:prompt "C:\TEMP\.NETFramework,Version=v4.0.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+       CoreResGen:
+         "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile Login.resX,Debug\eshop_gui.Login.resources
+         Processing resource file "Login.resX" into "Debug\eshop_gui.Login.resources".
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /ID:\Z\IoannaM\Project\eshop_gui\eshop_gui\packages\sqlite3.3.8.8.3\build\native\../..//build/native/include/ /nologo /fo"Debug\app.res" app.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Z\IoannaM\Project\eshop_gui\eshop_gui\Debug\eshop_gui.exe" /INCREMENTAL:NO /NOLOGO /ASSEMBLYRESOURCE:Debug\eshop_gui.Login.resources /MANIFEST /ManifestFile:"Debug\eshop_gui.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Z\IoannaM\Project\eshop_gui\eshop_gui\Debug\eshop_gui.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         Debug\Administrator.obj
+         Debug\Availability.obj
+         Debug\Company.obj
+         Debug\Customer.obj
+         Debug\Order.obj
+         Debug\PC.obj
+         Debug\Person.obj
+         Debug\ProductBase.obj
+         Debug\ProductDAO.obj
+         Debug\Smartphone.obj
+         Debug\TV.obj
+         Debug\UserBase.obj
+         Debug\AssemblyInfo.obj
+         Debug\eshop_gui.obj
+         Debug\stdafx.obj
+         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+     1>LINK : fatal error LNK1123: failure during conversion to COFF: file invalid or corrupt
+     1>Done Building Project "D:\Z\IoannaM\Project\eshop_gui\eshop_gui\eshop_gui\eshop_gui.vcxproj" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:08.83
