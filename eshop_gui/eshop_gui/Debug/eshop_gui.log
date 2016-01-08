@@ -1,4 +1,4 @@
-﻿Build started 7/1/2016 9:11:24 μμ.
+﻿Build started 8/1/2016 3:55:42 μμ.
      1>Project "D:\Z\IoannaM\Project\eshop_gui\eshop_gui\eshop_gui\eshop_gui.vcxproj" on node 2 (rebuild target(s)).
      1>_PrepareForClean:
          Deleting file "Debug\eshop_gui.lastbuildstate".
@@ -56,9 +56,29 @@
          Debug\eshop_gui.obj
          Debug\stdafx.obj
          "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
-     1>LINK : fatal error LNK1123: failure during conversion to COFF: file invalid or corrupt
+     1>ProductDAO.obj : warning LNK4248: unresolved typeref token (0100000F) for 'sqlite3'; image may not run
+     1>ProductDAO.obj : warning LNK4248: unresolved typeref token (01000018) for 'sqlite3_stmt'; image may not run
+     1>ProductDAO.obj : error LNK2028: unresolved token (0A0000B0) "extern "C" unsigned char const * __cdecl sqlite3_column_text(struct sqlite3_stmt *,int)" (?sqlite3_column_text@@$$J0YAPBEPAUsqlite3_stmt@@H@Z) referenced in function "public: class Availability __thiscall ProductDAO::fetchProductBySerialFromDB(int)" (?fetchProductBySerialFromDB@ProductDAO@@$$FQAE?AVAvailability@@H@Z)
+     1>ProductDAO.obj : error LNK2028: unresolved token (0A0000B2) "extern "C" double __cdecl sqlite3_column_double(struct sqlite3_stmt *,int)" (?sqlite3_column_double@@$$J0YANPAUsqlite3_stmt@@H@Z) referenced in function "public: class Availability __thiscall ProductDAO::fetchProductBySerialFromDB(int)" (?fetchProductBySerialFromDB@ProductDAO@@$$FQAE?AVAvailability@@H@Z)
+     1>ProductDAO.obj : error LNK2028: unresolved token (0A0000B5) "extern "C" int __cdecl sqlite3_column_int(struct sqlite3_stmt *,int)" (?sqlite3_column_int@@$$J0YAHPAUsqlite3_stmt@@H@Z) referenced in function "public: int __thiscall ProductDAO::getProductAvailabilityFromDB(int)" (?getProductAvailabilityFromDB@ProductDAO@@$$FQAEHH@Z)
+     1>ProductDAO.obj : error LNK2028: unresolved token (0A0000BC) "extern "C" int __cdecl sqlite3_finalize(struct sqlite3_stmt *)" (?sqlite3_finalize@@$$J0YAHPAUsqlite3_stmt@@@Z) referenced in function "public: int __thiscall ProductDAO::insertProductInDB(class PC,int,int)" (?insertProductInDB@ProductDAO@@$$FQAEHVPC@@HH@Z)
+     1>ProductDAO.obj : error LNK2028: unresolved token (0A0000BD) "extern "C" int __cdecl sqlite3_step(struct sqlite3_stmt *)" (?sqlite3_step@@$$J0YAHPAUsqlite3_stmt@@@Z) referenced in function "public: int __thiscall ProductDAO::insertProductInDB(class PC,int,int)" (?insertProductInDB@ProductDAO@@$$FQAEHVPC@@HH@Z)
+     1>ProductDAO.obj : error LNK2028: unresolved token (0A0000C7) "extern "C" int __cdecl sqlite3_bind_text(struct sqlite3_stmt *,int,char const *,int,void (__cdecl*)(void *))" (?sqlite3_bind_text@@$$J0YAHPAUsqlite3_stmt@@HPBDHP6AXPAX@Z@Z) referenced in function "public: int __thiscall ProductDAO::insertProductInDB(class PC,int,int)" (?insertProductInDB@ProductDAO@@$$FQAEHVPC@@HH@Z)
+     1>ProductDAO.obj : error LNK2028: unresolved token (0A0000C9) "extern "C" int __cdecl sqlite3_bind_double(struct sqlite3_stmt *,int,double)" (?sqlite3_bind_double@@$$J0YAHPAUsqlite3_stmt@@HN@Z) referenced in function "public: int __thiscall ProductDAO::insertProductInDB(class PC,int,int)" (?insertProductInDB@ProductDAO@@$$FQAEHVPC@@HH@Z)
+     1>ProductDAO.obj : error LNK2028: unresolved token (0A0000CA) "extern "C" int __cdecl sqlite3_bind_int(struct sqlite3_stmt *,int,int)" (?sqlite3_bind_int@@$$J0YAHPAUsqlite3_stmt@@HH@Z) referenced in function "public: int __thiscall ProductDAO::insertProductInDB(class PC,int,int)" (?insertProductInDB@ProductDAO@@$$FQAEHVPC@@HH@Z)
+     1>ProductDAO.obj : error LNK2028: unresolved token (0A0000CC) "extern "C" int __cdecl sqlite3_prepare(struct sqlite3 *,char const *,int,struct sqlite3_stmt * *,char const * *)" (?sqlite3_prepare@@$$J0YAHPAUsqlite3@@PBDHPAPAUsqlite3_stmt@@PAPBD@Z) referenced in function "public: int __thiscall ProductDAO::insertProductInDB(class PC,int,int)" (?insertProductInDB@ProductDAO@@$$FQAEHVPC@@HH@Z)
+     1>ProductDAO.obj : error LNK2019: unresolved external symbol "extern "C" int __cdecl sqlite3_finalize(struct sqlite3_stmt *)" (?sqlite3_finalize@@$$J0YAHPAUsqlite3_stmt@@@Z) referenced in function "public: int __thiscall ProductDAO::insertProductInDB(class PC,int,int)" (?insertProductInDB@ProductDAO@@$$FQAEHVPC@@HH@Z)
+     1>ProductDAO.obj : error LNK2019: unresolved external symbol "extern "C" int __cdecl sqlite3_step(struct sqlite3_stmt *)" (?sqlite3_step@@$$J0YAHPAUsqlite3_stmt@@@Z) referenced in function "public: int __thiscall ProductDAO::insertProductInDB(class PC,int,int)" (?insertProductInDB@ProductDAO@@$$FQAEHVPC@@HH@Z)
+     1>ProductDAO.obj : error LNK2019: unresolved external symbol "extern "C" int __cdecl sqlite3_bind_text(struct sqlite3_stmt *,int,char const *,int,void (__cdecl*)(void *))" (?sqlite3_bind_text@@$$J0YAHPAUsqlite3_stmt@@HPBDHP6AXPAX@Z@Z) referenced in function "public: int __thiscall ProductDAO::insertProductInDB(class PC,int,int)" (?insertProductInDB@ProductDAO@@$$FQAEHVPC@@HH@Z)
+     1>ProductDAO.obj : error LNK2019: unresolved external symbol "extern "C" int __cdecl sqlite3_bind_double(struct sqlite3_stmt *,int,double)" (?sqlite3_bind_double@@$$J0YAHPAUsqlite3_stmt@@HN@Z) referenced in function "public: int __thiscall ProductDAO::insertProductInDB(class PC,int,int)" (?insertProductInDB@ProductDAO@@$$FQAEHVPC@@HH@Z)
+     1>ProductDAO.obj : error LNK2019: unresolved external symbol "extern "C" int __cdecl sqlite3_bind_int(struct sqlite3_stmt *,int,int)" (?sqlite3_bind_int@@$$J0YAHPAUsqlite3_stmt@@HH@Z) referenced in function "public: int __thiscall ProductDAO::insertProductInDB(class PC,int,int)" (?insertProductInDB@ProductDAO@@$$FQAEHVPC@@HH@Z)
+     1>ProductDAO.obj : error LNK2019: unresolved external symbol "extern "C" int __cdecl sqlite3_prepare(struct sqlite3 *,char const *,int,struct sqlite3_stmt * *,char const * *)" (?sqlite3_prepare@@$$J0YAHPAUsqlite3@@PBDHPAPAUsqlite3_stmt@@PAPBD@Z) referenced in function "public: int __thiscall ProductDAO::insertProductInDB(class PC,int,int)" (?insertProductInDB@ProductDAO@@$$FQAEHVPC@@HH@Z)
+     1>ProductDAO.obj : error LNK2019: unresolved external symbol "extern "C" int __cdecl sqlite3_column_int(struct sqlite3_stmt *,int)" (?sqlite3_column_int@@$$J0YAHPAUsqlite3_stmt@@H@Z) referenced in function "public: int __thiscall ProductDAO::getProductAvailabilityFromDB(int)" (?getProductAvailabilityFromDB@ProductDAO@@$$FQAEHH@Z)
+     1>ProductDAO.obj : error LNK2019: unresolved external symbol "extern "C" unsigned char const * __cdecl sqlite3_column_text(struct sqlite3_stmt *,int)" (?sqlite3_column_text@@$$J0YAPBEPAUsqlite3_stmt@@H@Z) referenced in function "public: class Availability __thiscall ProductDAO::fetchProductBySerialFromDB(int)" (?fetchProductBySerialFromDB@ProductDAO@@$$FQAE?AVAvailability@@H@Z)
+     1>ProductDAO.obj : error LNK2019: unresolved external symbol "extern "C" double __cdecl sqlite3_column_double(struct sqlite3_stmt *,int)" (?sqlite3_column_double@@$$J0YANPAUsqlite3_stmt@@H@Z) referenced in function "public: class Availability __thiscall ProductDAO::fetchProductBySerialFromDB(int)" (?fetchProductBySerialFromDB@ProductDAO@@$$FQAE?AVAvailability@@H@Z)
+     1>D:\Z\IoannaM\Project\eshop_gui\eshop_gui\Debug\eshop_gui.exe : fatal error LNK1120: 18 unresolved externals
      1>Done Building Project "D:\Z\IoannaM\Project\eshop_gui\eshop_gui\eshop_gui\eshop_gui.vcxproj" (rebuild target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:08.83
+Time Elapsed 00:00:19.02
